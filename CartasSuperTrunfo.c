@@ -1,22 +1,52 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+int Estado[50];
+int Cidade[50];
+char Condigo_carta[3];
+int Populacão;
+float Area_km²;
+float Pib;
+int Pontos_turisticos;
 
-    return 0;
+printf("Digite o nome do estado:\n");
+scanf("%s", &Estado);
+printf("nome do Estado é: %s\n", Estado);
+
+printf("Digite o nome da cidade:\n");
+scanf("%s", &Cidade);
+printf("O nome da ciade é: %s\n", Cidade);
+
+printf("Código da carta:\n");
+scanf("%s", &Condigo_carta);
+printf("O condigo da carta é: %s\n", Condigo_carta);
+
+printf("Numeros de habitantes:\n");
+scan("%d", &Populacão);
+printf("Habitantes total é: %d\n", Populacão);
+
+printf("Quantos quilomentros km²?\n");
+scanf("%2.f", &Area_km²);
+printf("Quilomentros km² %2.f\n", Area_km²);
+
+printf("Digite o Pib\n");
+scanf("%2.f", &Pib);
+printf("Numero do Pib é: %.2f\n", Pib);
+
+printf("Quantos pontos turisticos?\n");
+scanf("%d", &Pontos_turisticos);
+printf("Totais de pontos são: %d\n", Pontos_turisticos);
+
+
+return 0;
+
+
 }
+
+
+
+
+
+
+
